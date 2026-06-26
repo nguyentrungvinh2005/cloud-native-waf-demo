@@ -5,15 +5,46 @@ metadata:
 data:
   index.html: |
     <!DOCTYPE html>
-    <html>
-    <head><title>Fruit Store - Microservices</title>
-    <style>body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; margin-top: 5%; background: #fdfbf7; } .card { background: white; padding: 40px; display: inline-block; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-top: 5px solid #2ecc71; } h1 { color: #2c3e50; } .badge { background: #2ecc71; color: white; padding: 6px 12px; border-radius: 20px; font-weight: bold; font-size: 0.9em; }</style>
-    </head><body><div class="card">
-    <h1>🍉 Cửa Hàng Trái Cây E-commerce</h1>
-    <h2>Kiến Trúc Vi Dịch Vụ (Microservices)</h2>
-    <p>Trạng thái hạ tầng: <span class="badge">FRONTEND ĐỘC LẬP</span></p>
-    <p>Giao diện đã được tách rời. Các chức năng Sản phẩm, Đơn hàng đang chạy ở Pod riêng.</p>
-    </div></body></html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Store - Microservices</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            margin-top: 5%; 
+            background: #fdfbf7; 
+        } 
+        .card { 
+            background: white; 
+            padding: 40px; 
+            display: inline-block; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+            border-top: 5px solid #2ecc71; 
+        } 
+        h1 { color: #2c3e50; } 
+        .badge { 
+            background: #2ecc71; 
+            color: white; 
+            padding: 6px 12px; 
+            border-radius: 20px; 
+            font-weight: bold; 
+            font-size: 0.9em; 
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🍉 Cửa Hàng Trái Cây E-commerce</h1>
+        <h2>Kiến Trúc Vi Dịch Vụ (Microservices)</h2>
+        <p>Trạng thái hạ tầng: <span class="badge">FRONTEND ĐỘC LẬP</span></p>
+        <p>Giao diện đã được tách rời. Các chức năng Sản phẩm, Đơn hàng đang chạy ở Pod riêng.</p>
+    </div>
+</body>
+</html>
 ---
 apiVersion: apps/v1
 kind: Deployment
