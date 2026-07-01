@@ -5,46 +5,61 @@ metadata:
 data:
   index.html: |
     <!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Store - Monolith</title>
-    <style>
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            text-align: center; 
-            margin-top: 5%; 
-            background: #fdfbf7; 
-        } 
-        .card { 
-            background: white; 
-            padding: 40px; 
-            display: inline-block; 
-            border-radius: 12px; 
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
-            border-top: 5px solid #e74c3c; 
-        } 
-        h1 { color: #2c3e50; } 
-        .badge { 
-            background: #e74c3c; 
-            color: white; 
-            padding: 6px 12px; 
-            border-radius: 20px; 
-            font-weight: bold; 
-            font-size: 0.9em; 
-        }
-    </style>
-</head>
-<body>
-    <div class="card">
-        <h1>🍉 Cửa Hàng Trái Cây E-commerce</h1>
-        <h2>Kiến Trúc Nguyên Khối (Monolith)</h2>
-        <p>Trạng thái hạ tầng: <span class="badge">TẤT CẢ CHẠY CHUNG 1 POD</span></p>
-        <p>Giao diện người dùng, Giỏ hàng, và Cơ sở dữ liệu đang dùng chung tài nguyên.</p>
-    </div>
-</body>
-</html>
+    <html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fruit Store - Monolith</title>
+        <style>
+            body { 
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                text-align: center; 
+                margin-top: 5%; 
+                background: #fdfbf7; 
+            } 
+            .card { 
+                background: white; 
+                padding: 40px; 
+                display: inline-block; 
+                border-radius: 12px; 
+                box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+                border-top: 5px solid #e74c3c; 
+            } 
+            h1 { color: #2c3e50; } 
+            .badge { 
+                background: #e74c3c; 
+                color: white; 
+                padding: 6px 12px; 
+                border-radius: 20px; 
+                font-weight: bold; 
+                font-size: 0.9em; 
+            }
+            .material-input {
+                border: none;
+                border-bottom: 2px solid #e74c3c;
+                background: transparent;
+                padding: 8px 0;
+                font-size: 16px;
+                outline: none;
+                width: 80%;
+                margin-top: 20px;
+                transition: border-bottom-color 0.3s;
+            }
+            .material-input:focus {
+                border-bottom: 2px solid #c0392b;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <h1>🍉 Cửa Hàng Trái Cây E-commerce</h1>
+            <h2>Kiến Trúc Nguyên Khối (Monolith)</h2>
+            <p>Trạng thái hạ tầng: <span class="badge">TẤT CẢ CHẠY CHUNG 1 POD</span></p>
+            <p>Giao diện người dùng, Giỏ hàng, và Cơ sở dữ liệu đang dùng chung tài nguyên.</p>
+            <input type="text" class="material-input" placeholder="Tìm kiếm trái cây...">
+        </div>
+    </body>
+    </html>
 ---
 apiVersion: apps/v1
 kind: Deployment
